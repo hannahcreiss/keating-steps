@@ -1,0 +1,213 @@
+body {
+	/*background: url(../img/steps.jpg) no-repeat center center fixed; 
+	background-size: cover;*/
+}
+
+#sideNav {
+	position: fixed;
+	left: 20px;
+	display: none;
+	opacity: .8;
+
+}
+
+.sideCircle {
+	width: 100px;
+	height: 100px;
+	border-radius: 50px;
+	background-color: #5DBAD4;
+	color: white;
+	text-align: center;
+	line-height: 100px;
+	font-family: "Dr Sugiyama", cursive;
+	font-size: 30px;
+	margin-bottom: 30px;
+}
+
+#sideNav a{
+	color: white;
+	text-decoration: none;
+	display: block;
+}
+
+#sideNav a:hover{
+	color: black;
+}
+
+
+#header{
+	font-family: "Vast Shadow", cursive;
+	color: black;
+	font-size: 50px;
+	text-align: center;
+	border-bottom: 1px solid black;
+	line-height: 110px;
+}
+
+#inner {
+	background-color: white;
+	opacity: .8;
+	width: 780px;
+	min-height: 100%;
+	margin: 0 auto;
+	padding: 0 30px;
+	border: 5px solid #5DBAD4;
+	overflow: hidden;
+
+	
+}
+
+.circle {
+	width: 100px;
+	height: 100px;
+	border-radius: 50px;
+	background-color: black;
+	color: white;
+	text-align: center;
+	line-height: 100px;
+	margin: 0 40px;
+	float: left;
+	font-family: "Dr Sugiyama", cursive;
+	font-size: 30px;
+}
+
+.clearfix:after {
+
+     visibility: hidden;
+     display: block;
+     font-size:0;
+     content:" ";
+     clear:both;
+  	 height: 0;
+ }
+
+#topNav {
+	width: 720px;
+	margin: 10px auto;
+}
+
+#topNav a{
+	color: white;
+	text-decoration: none;
+	display: block;
+}
+#topNav a:hover{
+	color: #5DBAD4;
+}
+
+#stickyheader {
+	width: 780px;
+	margin: 0 auto;
+	background-color: white;
+	height: 100px;
+	padding-bottom: 20px;
+
+	
+}
+
+#stickyalias {
+	display: none;
+	height: 10px;
+}
+
+#othercontent {
+	margin-top: 20px;
+}
+
+#left{
+	float: left;
+}
+
+#player {
+	
+}
+
+#fbLikeBox {
+	margin: 20px 0 20px 20px;
+	height: 70px;
+}
+#right {
+	margin-left: 380px;
+}
+
+h2 {
+	font-family: "Dr Sugiyama", cursive;
+	font-size: 36px;
+	margin-bottom: 0;
+}
+
+
+#bio {
+	height: 480px;
+	overflow: scroll;
+	border: 2px solid #5DBAD4;
+	font-size: 16px;
+	font-family: "Fauna One", serif;
+	padding-top: 0;
+}
+
+#bio p{
+	padding: 0 10px;
+}
+
+
+#videos {
+	margin-top: 50px;
+}
+
+
+#shows {
+	height: 500px;
+}
+
+#contact {
+	height: 500px;
+}
+
+#displayVideo {
+	margin: 15px auto;
+	width: 560px;
+	height: 315px;
+	border: 2px solid #5DBAD4
+}
+
+#videoTitle {
+	height: 60px;
+}
+
+#videoTitle h2 {
+	font-family: "Dr Sugiyama", cursive;
+	text-align: center;
+	font-size: 22px;
+}
+
+
+#thumbnails{
+	width: 70%;
+	margin: 0 auto;
+
+
+	
+}
+
+.thumb:hover{
+	opacity: .8;
+
+}
+
+
+.thumb {
+	width: 100px;
+	height: 100px;
+	margin-right: 1px;
+	border: 2px solid #5DBAD4;
+}
+
+.thumb:first-child {
+	margin-left: ;
+}
+
+
+.video {
+	display: none;
+}
