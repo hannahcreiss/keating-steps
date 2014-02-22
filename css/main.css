@@ -287,7 +287,7 @@ h2 {
 }
 #footer {
 	background-color: black;
-	height: 60px;
+	height: 30px;
 	width: 850px;
 	margin: 0 auto;
 	opacity: .8;
@@ -315,4 +315,30 @@ h2 {
 	text-decoration: none;
 }
 
+#contactBox {
+	width: 100px;
+	height: 60px;
+	border-radius: 10px;
+	opacity: .8;
+	background-color: #5DBAD4;
+	position: fixed;
+	right: 60px;
+	bottom: -60px;
+	opacity: .8;
+	line-height: 60px;
+	text-align: center;
+}
 
+#contactBox:hover{
+	background-color: black;
+	cursor: pointer;
+	cursor: hand;
+}
+
+#contactBox a {
+	font-family: "Fauna One", serif;
+	color: white;
+	text-decoration: none;
+	display: block;
+
+}

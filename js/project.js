@@ -13,7 +13,28 @@ $(document).ready(function() {
                 if($(window).scrollTop() < 300){
                     $("#sideNav").fadeOut();
                 }
-                    });
+
+
+
+                if($(window).scrollTop() + screen.height > $('body').height()) {
+
+                    
+                    $("#contactBox").animate({
+
+                        "bottom": "10",
+                        "display": "block"
+
+
+                    }, 500);
+
+                } 
+
+       
+            });
+
+
+
+
 
             $(".thumb").mouseenter(function(){
                 $("#videoTitle h2").html($(this).attr("alt"));
@@ -80,6 +101,7 @@ $(document).ready(function() {
                 $("#rightButton").css("opacity", ".8");
             }
          });
+
 
 
          
