@@ -5,7 +5,7 @@ body {
 
 #sideNav {
 	position: fixed;
-	left: 20px;
+	right: 92%;
 	display: none;
 	opacity: .8;
 
@@ -16,13 +16,13 @@ body {
 }
 
 .sideCircle {
-	width: 100px;
-	height: 20%;
-	border-radius: 50px;
+	width: 150%;
+	height: auto;	
+	border-radius: 50%;
 	background-color: #5DBAD4;
 	color: white;
 	text-align: center;
-	line-height: 100px;
+	line-height: 340%;
 	font-family: "Dr Sugiyama", cursive;
 	font-size: 30px;
 	margin-bottom: 50%;
@@ -45,17 +45,17 @@ body {
 	font-size: 50px;
 	text-align: center;
 	border-bottom: 1px solid black;
-	line-height: 110px;
+	line-height: 150px;
 }
 
 #inner {
 	background-color: white;
 	opacity: .8;
-	width: 780px;
+	width: 70%;
 	min-height: 100%;
 	margin: 0 auto;
 	padding: 0 30px;
-	border: 5px solid #5DBAD4;
+	border:  solid 5px #5DBAD4;
 	overflow: hidden;
 
 	
@@ -64,16 +64,25 @@ body {
 .circle {
 	width: 100px;
 	height: 100px;
-	border-radius: 50px;
+	border-radius: 50%;
 	background-color: black;
 	color: white;
 	text-align: center;
 	line-height: 100px;
-	margin: 0 40px;
+	margin: 0 25px;
 	float: left;
 	font-family: "Dr Sugiyama", cursive;
 	font-size: 30px;
 }
+
+.circle:first-child {
+	margin-left: 0px;
+}
+
+.circle:last-child{
+	margin-right: 0px;
+}
+
 
 .clearfix:after {
 
@@ -86,8 +95,8 @@ body {
  }
 
 #topNav {
-	width: 720px;
-	margin: 10px auto;
+	width: 550px;
+	margin: 40px auto;
 }
 
 #topNav a{
@@ -133,7 +142,7 @@ body {
 h2 {
 	font-family: "Dr Sugiyama", cursive;
 	font-size: 36px;
-	margin-bottom: 0;
+	margin-bottom: 10px;
 }
 
 
@@ -143,7 +152,8 @@ h2 {
 	border: 2px solid #5DBAD4;
 	font-size: 16px;
 	font-family: "Fauna One", serif;
-	padding-top: 0;
+	padding-top: 15px;
+	line-height: 2em;
 }
 
 #bio p{
@@ -186,7 +196,7 @@ h2 {
 
 #leftButton {
 	position: absolute;
-	left: 80px;
+	left: 15%;
 	bottom: 40px;
 	opacity: .2;
 	cursor: pointer;
@@ -195,7 +205,7 @@ h2 {
 
 #rightButton {
 	position: absolute;
-	right: 90px;
+	right: 15%;
 	bottom: 40px;
 	opacity: .8;
 	cursor: pointer;
@@ -203,7 +213,7 @@ h2 {
 }
 
 #thumbGallery {
-	width: 545px;
+	width: 420px;
 	height: 104px;
 	position: relative;
 	overflow: hidden;
@@ -212,7 +222,8 @@ h2 {
 
 
 #thumbnails{
-	width: 977px;
+	width: 1050px;
+	height: 104px;
 	position: absolute;
 	left: 0;
 	
@@ -228,11 +239,11 @@ h2 {
 	width: 100px;
 	height: 100px;
 	margin-right: 1px;
-	border: 2px solid #5DBAD4;
+	/*border: 2px solid #5DBAD4;*/
 }
 
 .thumb:first-child {
-	margin-left: ;
+	margin-left: 0;
 }
 
 
@@ -243,22 +254,33 @@ h2 {
 #shows {
 	height: 400px;
 	position: relative;
+	margin-bottom: 100px;
 }
 
-#pastShows h3 {
+#pastShows h3, #upcoming h3 {
 	font-family: "Fauna One", serif;
-	font-size: 18px;
+	font-size: 20px;
+
 
 }
 
-#pastShows {
+#upcoming{
 	margin: 0 auto;
 	margin-top: 30px;
 	position: absolute;
+	margin-bottom: 30px;
 	left: 60px;
 }
 
-#pastShows ul li{
+#pastShows{
+	margin: 0 auto;
+	margin-top: 150px;
+	position: absolute;
+	left: 100px;
+	}
+
+
+#pastShows ul li, #upcoming ul li{
 	font-family: "Fauna One", serif;
 	font-size: 18px;
 	line-height: 60px;
@@ -288,10 +310,13 @@ h2 {
 #footer {
 	background-color: black;
 	height: 30px;
-	width: 850px;
+	width: 70%;
+	position: relative;
 	margin: 0 auto;
 	opacity: .8;
-	position: relative;
+	padding: 0 30px;
+	border: 5px solid black;
+	
 }
 
 #footer a {
@@ -322,7 +347,7 @@ h2 {
 	opacity: .8;
 	background-color: #5DBAD4;
 	position: fixed;
-	right: 60px;
+	left: 90%;
 	bottom: -60px;
 	opacity: .8;
 	line-height: 60px;
@@ -342,3 +367,44 @@ h2 {
 	display: block;
 
 }
+
+@media only screen and (max-width: 830px){
+	#leftButton{
+		left: 4%;
+	}
+
+	#rightButton {
+		right: 4%;
+	}
+}
+
+@media only screen and (max-width: 800px) {
+	#right{
+		clear:both;
+		width: 450px;
+		margin: 0 auto;
+
+	}
+
+	#header{
+		line-height: 100px;
+	}
+#left{
+	margin: 0 auto;
+}
+
+	#bio{
+		border: 2px solid #5DBAD4;
+		height: 300px;
+	}
+
+	#thumbGallery {
+		overflow: scroll;
+	}
+}
+
+@media only screen and (max-width: 768px) {
+.sideCircle{
+	background-color: white;
+}
+

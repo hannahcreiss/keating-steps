@@ -1,14 +1,16 @@
 $(document).ready(function() {
 	$(function(){
 
+        $(".fancybox img").each(function(){
+            $(this).attr("src", $(this).parent().attr("href"));
+        });
         $(".fancybox").fancybox();
 
  
          $(window).scroll(function(){
                   if( $(window).scrollTop() > 300) {
                        $("#sideNav").fadeIn();
-
-                        }
+                   }
 
                 if($(window).scrollTop() < 300){
                     $("#sideNav").fadeOut();
@@ -32,11 +34,7 @@ $(document).ready(function() {
        
             });
 
-
-
-
-
-            $(".thumb").mouseenter(function(){
+             $(".thumb").mouseenter(function(){
                 $("#videoTitle h2").html($(this).attr("alt"));
             });
 
@@ -46,6 +44,10 @@ $(document).ready(function() {
         
 
         $(".thumb").click(function(){
+
+            
+            $("#displayVideo").attr("src","");
+            
             
             var id= $(this).attr("id");
             var sub= id.substring(5);
@@ -74,30 +76,30 @@ $(document).ready(function() {
 
 
         $("#rightButton").click(function(){
-            if (($("#thumbnails").position().left <= 0) && ($("#thumbnails").position().left > -420)) {
-                $("#thumbnails").animate({"left": "-=108"}, 1000);
+            if (($("#thumbnails").position().left <= 0) && ($("#thumbnails").position().left > -526)) {
+                $("#thumbnails").animate({"left": "-=105"}, 1000);
             }   
 
-            if ($("#thumbnails").position().left >= -108) {
+            if ($("#thumbnails").position().left >= -105) {
                 $("#leftButton").css("opacity", ".8");
             } 
 
-            if ($("#thumbnails").position().left <= -324) {
+            if ($("#thumbnails").position().left <= -525) {
                 $("#rightButton").css("opacity", ".2");
             }
 
         });
     
          $("#leftButton").click(function(){
-            if (($("#thumbnails").position().left <= -108) && ($("#thumbnails").position().left > -433)) {
-                    $("#thumbnails").animate({"left": "+=108"}, 1000);
+            if (($("#thumbnails").position().left <= -105) && ($("#thumbnails").position().left > -631)) {
+                    $("#thumbnails").animate({"left": "+=105"}, 1000);
               }
 
-            if ($("#thumbnails").position().left >= -108) {
+            if ($("#thumbnails").position().left >= -105) {
                 $("#leftButton").css("opacity", ".2");
             }
 
-            if ($("#thumbnails").position().left >= -432) {
+            if ($("#thumbnails").position().left > -631) {
                 $("#rightButton").css("opacity", ".8");
             }
          });
