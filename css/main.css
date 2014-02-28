@@ -164,7 +164,7 @@ h2 {
 #videos {
 	margin-top: 50px;
 	position: relative;
-	margin-bottom: 60px;
+	margin-bottom: 500px;
 
 }
 
@@ -175,14 +175,48 @@ h2 {
 
 #contact {
 	height: 500px;
+
 }
 
-#displayVideo {
-	margin: 40px auto;
-	width: 560px;
-	height: 315px;
-	border: 2px solid #5DBAD4
+#displayVideo{
+	position: relative;
 }
+
+
+#displayVideo img {
+	margin: 10px 10px;
+	width: 100px;
+	height: 100px;
+	border: 2px solid #5DBAD4;
+	float:left;
+}
+
+#displayVideo img:hover {
+	opacity: .8;
+
+}
+
+
+
+#display img{
+	width: 300px;
+	height: 250px;
+	margin: 0 auto;
+	float: left;
+	position: absolute;
+	right: 2%;
+	margin-top: 100px;
+
+}
+
+#smaller {
+	position: absolute;
+	right: 40%;
+	left: 0%;
+	margin-top: 50px;
+}
+
+
 
 #videoTitle {
 	height: 60px;
@@ -194,62 +228,7 @@ h2 {
 	font-size: 22px;
 }
 
-#leftButton {
-	position: absolute;
-	left: 15%;
-	bottom: 40px;
-	opacity: .2;
-	cursor: pointer;
-	cursor: hand;
-}
 
-#rightButton {
-	position: absolute;
-	right: 15%;
-	bottom: 40px;
-	opacity: .8;
-	cursor: pointer;
-	cursor: hand;
-}
-
-#thumbGallery {
-	width: 420px;
-	height: 104px;
-	position: relative;
-	overflow: hidden;
-	margin: 0 auto;
-}
-
-
-#thumbnails{
-	width: 1050px;
-	height: 104px;
-	position: absolute;
-	left: 0;
-	
-}
-
-.thumb:hover{
-	opacity: .8;
-
-}
-
-
-.thumb {
-	width: 100px;
-	height: 100px;
-	margin-right: 1px;
-	/*border: 2px solid #5DBAD4;*/
-}
-
-.thumb:first-child {
-	margin-left: 0;
-}
-
-
-.video {
-	display: none;
-}
 
 #shows {
 	height: 400px;
@@ -366,6 +345,24 @@ h2 {
 	text-decoration: none;
 	display: block;
 
+}
+
+@media only screen and (max-width: 975px) {
+	#smaller img{
+		height: 75px;
+		width: 75px;
+
+	}
+
+	#smaller{
+		right: 50%;
+	}
+}
+@media only screen and (max-width: 900px) {
+	#display img {
+		width: 250px;
+		height: 200px;
+	}
 }
 
 @media only screen and (max-width: 830px){

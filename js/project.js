@@ -4,8 +4,21 @@ $(document).ready(function() {
         $(".fancybox img").each(function(){
             $(this).attr("src", $(this).parent().attr("href"));
         });
+
+
         $(".fancybox").fancybox();
 
+            $(".various").fancybox({
+        maxWidth    : 800,
+        maxHeight   : 600,
+        fitToView   : false,
+        width       : '70%',
+        height      : '70%',
+        autoSize    : false,
+        closeClick  : false,
+        openEffect  : 'none',
+        closeEffect : 'none'
+    });
  
          $(window).scroll(function(){
                   if( $(window).scrollTop() > 300) {
@@ -34,44 +47,53 @@ $(document).ready(function() {
        
             });
 
-             $(".thumb").mouseenter(function(){
-                $("#videoTitle h2").html($(this).attr("alt"));
+             $("#displayVideo img").mouseenter(function(){
+                $("#videoTitle h2").html($(this).parent().attr("title"));
+
             });
 
-            $(".thumb").mouseleave(function(){
-                $("#videoTitle h2").html($("#displayVideo iframe").attr("alt"));
-            });
+            
+            $("#displayVideo img").mouseleave(function(){
+                $("#videoTitle h2").html(" ");
+            })
         
 
-        $(".thumb").click(function(){
+//         $(".thumb").click(function(){
 
             
-            $("#displayVideo").attr("src","");
             
-            
-            var id= $(this).attr("id");
-            var sub= id.substring(5);
-            var lastClicked= $(this).attr("alt");
+//             var id= $(this).attr("id");
+//             var sub= id.substring(5);
+//             var lastClicked= $(this).attr("alt");
 
 
     
-            $("#displayVideo iframe").hide();
+//             $("#displayVideo iframe").hide();
 
-            $("#"+sub).css("display", "block");
+//             //First get the  iframe URL
+//             var url = $('#displayVideo').attr('src');
 
-            $("videoTitle h2").html($(this).attr("alt"));
+// //Then assign the src to null, this then stops the video been playing
+//             $('#displayVideo').attr('src', '');
+
+// // Finally you reasign the URL back to your iframe, so when you hide and load it again you still have the link
+//             $('#displayVideo').attr('src', url);
+
+//             $("#"+sub).css("display", "block");
+
+//             $("videoTitle h2").html($(this).attr("alt"));
 
 
-            $(".thumb").mouseenter(function(){
-                $("#videoTitle h2").html($(this).attr("alt"));
-            });
+//             $(".thumb").mouseenter(function(){
+//                 $("#videoTitle h2").html($(this).attr("alt"));
+//             });
 
-            $(".thumb").mouseleave(function(){
-                $("#videoTitle h2").html(lastClicked);
-            });
+//             $(".thumb").mouseleave(function(){
+//                 $("#videoTitle h2").html(lastClicked);
+//             });
        
 
-        });
+//         });
 
 
 
