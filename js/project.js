@@ -18,7 +18,25 @@ $(document).ready(function() {
         closeClick  : false,
         openEffect  : 'none',
         closeEffect : 'none'
+    
     });
+
+    $(window).resize(function(){
+        if ($(window).width() < 480){
+            $("#topNav").hide();
+        } else {
+            $("#topNav").show();
+        }
+
+    });
+
+
+
+    if ($(window).width() < 480){
+            $("#topNav").hide();
+        } else {
+            $("#topNav").show();
+        }
  
          $(window).scroll(function(){
                   if( $(window).scrollTop() > 300) {
@@ -50,51 +68,16 @@ $(document).ready(function() {
              $("#displayVideo img").mouseenter(function(){
                 $("#videoTitle h2").html($(this).parent().attr("title"));
 
+
             });
 
             
             $("#displayVideo img").mouseleave(function(){
                 $("#videoTitle h2").html(" ");
-            })
+            });
+
+
         
-
-//         $(".thumb").click(function(){
-
-            
-            
-//             var id= $(this).attr("id");
-//             var sub= id.substring(5);
-//             var lastClicked= $(this).attr("alt");
-
-
-    
-//             $("#displayVideo iframe").hide();
-
-//             //First get the  iframe URL
-//             var url = $('#displayVideo').attr('src');
-
-// //Then assign the src to null, this then stops the video been playing
-//             $('#displayVideo').attr('src', '');
-
-// // Finally you reasign the URL back to your iframe, so when you hide and load it again you still have the link
-//             $('#displayVideo').attr('src', url);
-
-//             $("#"+sub).css("display", "block");
-
-//             $("videoTitle h2").html($(this).attr("alt"));
-
-
-//             $(".thumb").mouseenter(function(){
-//                 $("#videoTitle h2").html($(this).attr("alt"));
-//             });
-
-//             $(".thumb").mouseleave(function(){
-//                 $("#videoTitle h2").html(lastClicked);
-//             });
-       
-
-//         });
-
 
 
         $("#rightButton").click(function(){
