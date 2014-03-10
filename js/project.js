@@ -67,10 +67,7 @@ $(document).ready(function() {
 
              $("#displayVideo img").mouseenter(function(){
                 $("#videoTitle h2").html($(this).parent().attr("title"));
-
-
-            });
-
+            });  
             
             $("#displayVideo img").mouseleave(function(){
                 $("#videoTitle h2").html(" ");
