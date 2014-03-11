@@ -257,7 +257,7 @@ h2 {
 	margin: 0 auto;
 	margin-top: 30px;
 	position: absolute;
-	left: 3%;
+	left: 5%;
 	}
 
 
@@ -268,8 +268,14 @@ h2 {
 #pastShows ul li, #upcoming ul li{
 	font-family: "Fauna One", serif;
 	font-size: 18px;
-	line-height: 30px;
+	line-height: 40px;
 	list-style-type: none;
+
+}
+
+#pastShows ul{
+	position: relative;
+	left: 5%;
 }
 
 #gallery {
@@ -498,6 +504,10 @@ h2 {
 #videos{
 	margin-bottom: 400px;
 }
+
+	#shows ul li{
+		line-height: 30px;
+	}
 
 }
 
