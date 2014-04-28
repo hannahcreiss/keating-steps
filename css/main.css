@@ -1,9 +1,3 @@
-body {
-	/*background: url(../img/steps.jpg) no-repeat center center fixed; 
-	background-size: cover;*/
-}
-
-
 #sideNav {
 	position: fixed;
 	right: 90%;
@@ -39,7 +33,6 @@ body {
 	color: black;
 }
 
-
 #header{
 	font-family: "Vast Shadow", cursive;
 	color: black;
@@ -58,8 +51,6 @@ body {
 	padding: 0 30px;
 	border:  solid 5px #5DBAD4;
 	overflow: hidden;
-
-	
 }
 
 .circle {
@@ -84,15 +75,13 @@ body {
 	margin-right: 0px;
 }
 
-
 .clearfix:after {
-
-     visibility: hidden;
-     display: block;
-     font-size:0;
-     content:" ";
-     clear:both;
-  	 height: 0;
+	visibility: hidden;
+    display: block;
+    font-size:0;
+    content:" ";
+    clear:both;
+  	height: 0;
  }
 
 #topNav {
@@ -105,27 +94,13 @@ body {
 	text-decoration: none;
 	display: block;
 }
+
 #topNav a:hover{
 	color: #5DBAD4;
 }
 
-#stickyheader {
-	width: 780px;
-	margin: 0 auto;
-	background-color: white;
-	height: 100px;
-	padding-bottom: 20px;
-
-	
-}
-
-#stickyalias {
-	display: none;
-	height: 10px;
-}
-
-#othercontent {
-	margin-top: 20px;
+#othercontent{
+	margin-top: 60px;
 }
 
 #left{
@@ -141,6 +116,7 @@ body {
 	margin: 20px 0 20px 20px;
 	height: 70px;
 }
+
 #right {
 	margin-left: 380px;
 }
@@ -150,7 +126,6 @@ h2 {
 	font-size: 36px;
 	margin-bottom: 10px;
 }
-
 
 #bio {
 	height: 480px;
@@ -166,23 +141,19 @@ h2 {
 	padding: 0 10px;
 }
 
-
 #videos {
 	margin-top: 50px;
 	position: relative;
 	margin-bottom: 300px;
-
 }
 
 #contact {
 	height: 500px;
-
 }
 
 #displayVideo{
 	position: relative;
 }
-
 
 #smaller img {
 	margin: 6px 6px;
@@ -218,8 +189,6 @@ h2 {
 	margin-top: 450px;
 }
 
-
-
 #videoTitle {
 	height: 60px;
 	margin-top: 400px;
@@ -231,8 +200,6 @@ h2 {
 	font-size: 22px;
 }
 
-
-
 #shows {
 	height: 400px;
 	position: relative;
@@ -241,8 +208,6 @@ h2 {
 #pastShows h3 {
 	font-family: "Fauna One", serif;
 	font-size: 20px;
-
-
 }
 
 #upcoming{
@@ -258,7 +223,7 @@ h2 {
 	margin-top: 30px;
 	position: absolute;
 	left: 5%;
-	}
+}
 
 
 #upcoming h3, #pastShows h3{
@@ -270,10 +235,9 @@ h2 {
 	font-size: 18px;
 	line-height: 40px;
 	list-style-type: none;
-
 }
 
-#pastShows ul{
+#pastShows ul, #upcoming ul{
 	position: relative;
 	left: 5%;
 }
@@ -287,7 +251,6 @@ h2 {
 	margin: 30px auto;
 }
 
-
 #galleryThumbs a img {
 	margin: 15px auto;
 	width: 100px;
@@ -298,6 +261,7 @@ h2 {
 #galleryThumbs a img:hover {
 	opacity: .4;
 }
+
 #footer {
 	background-color: black;
 	height: 30px;
@@ -307,7 +271,6 @@ h2 {
 	opacity: .8;
 	padding: 0 30px;
 	border: 5px solid black;
-	
 }
 
 #footer a {
@@ -356,12 +319,9 @@ h2 {
 	color: white;
 	text-decoration: none;
 	display: block;
-
+	}
 }
 
-
-
-}
 @media only screen and (max-width: 1000px) {
 	#display img{
 		left: 30%;
@@ -395,9 +355,10 @@ h2 {
 	#header{
 		line-height: 100px;
 	}
-#left{
+
+	#left{
 	margin: 0 auto;
-}
+	}
 
 	#bio{
 		border: 2px solid #5DBAD4;
@@ -424,7 +385,7 @@ h2 {
 	height: 90px;
 	border-radius: 45px;
 	line-height: 90px;
-}
+	}
 
 	.circle:first-child{
 		margin-left: 20px;
@@ -432,7 +393,7 @@ h2 {
 
 	#left: {
 		margin: 0 auto;
-	}
+	}	
 
 	#contactBox{
 		display: none;
@@ -456,7 +417,7 @@ h2 {
 	height: 80px;
 	border-radius: 40px;
 	line-height: 80px;
-}
+	}
 
 	#smaller{
 		right: 30%;
@@ -483,27 +444,23 @@ h2 {
 	}
 
 
-
-#smaller a img {
+	#smaller a img {
 	margin: 2px;
-	
-}
+	}
 
-
-
-#smaller{
+	#smaller{
 	margin-top: 420px;
 	width: 350px;
 	left: 23%;
-}
+	}
 
-#videoTitle {
+	#videoTitle {
 	margin-top: 360px;
-}
+	}
 
-#videos{
+	#videos{
 	margin-bottom: 400px;
-}
+	}	
 
 	#shows ul li{
 		line-height: 30px;
@@ -548,7 +505,6 @@ h2 {
 	#display img{
 		left: 5%;
 	}
-
 }
 
 @media only screen and (max-width: 480px) {
@@ -634,8 +590,6 @@ h2 {
 		width: 70px;
 		height: 70px;
 	}
-
-
 }
 
 
